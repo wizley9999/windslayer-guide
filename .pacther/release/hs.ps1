@@ -19,7 +19,7 @@ try {
                 $View
             )
 
-            $subKey = $baseKey.OpenSubKey("ws\shell\open\command")
+            $subKey = $baseKey.OpenSubKey("windslayer\shell\open\command")
 
             if ($subKey -ne $null) {
                 return $subKey.GetValue("")
