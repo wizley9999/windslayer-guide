@@ -25,7 +25,7 @@ We translate and summarize official announcements published by the WindSlayer te
 
 All translations are unofficial and provided for convenience only.
 
-Follow here: [NEWS](https://github.com/wizley9999/windslayer.io/tree/main/news)
+Follow here: [News](https://github.com/wizley9999/windslayer.io/tree/main/news)
 
 ### 2. Guides (Tips & Tricks)
 
