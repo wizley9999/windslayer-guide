@@ -8,10 +8,11 @@ This tool is designed for global players who want a safer, faster, and more conv
 
 The WindSlayer Language Patching Tool:
 
-- Automatically detects the WindSlayer installation path using the `ws://` protocol
+- Automatically detects the WindSlayer installation path using the `windslayer://` protocol
 - Locates the internal `hs` directory
 - Safely backs up existing files before replacing them
 - Applies updated localization files in one click
+- Provides a restore option to revert to a previous backup
 
 ### What This Tool Does
 
@@ -20,14 +21,19 @@ When executed, the tool will:
 1. Detect the registered WindSlayer client path from Windows registry.
 2. Identify the `hs` folder inside the installation directory.
 3. Create a local `backup` folder.
-4. Backup any existing target files using a timestamped filename.
-5. Copy new localization files into the client directory.
+4. Create a timestamp-based backup directory.
+5. Backup any existing target files using a timestamped filename.
+6. Copy new localization files into the client directory.
 
 ### How to Use
 
 #### 1. Download
 
 Download the latest release package in [here](https://github.com/wizley9999/windslayer.io/releases).
+
+```
+https://github.com/wizley9999/windslayer.io/releases
+```
 
 #### 2. Extract
 
@@ -36,10 +42,12 @@ Extract all files into the same folder.
 The folder should contain:
 
 ```
-## PATCHER
+## PATCHERS
 
 - run.bat
 - hs.ps1
+- restore.bat
+- hs-restore.ps1
 
 ## RESOURCES
 
@@ -71,23 +79,43 @@ The patching process will begin automatically.
 If a file already exists in the `hs` directory:
 
 - It will be copied into a local `backup` folder.
-- The filename format will be:
+- A new folder will be created using the following format:
 
 ```
-filename-bak-YYYYMMDDHHMMSS.ext
+backup/YYYYMMDDHHMMSS/
 ```
 
 Example:
 
 ```
-UILngKo-bak-20260123101248.lng
+backup/20260302114533/
 ```
+
+All replaced files from that session will be stored inside that folder.
 
 If the file does not exist in the client directory:
 
 - It will simply be copied without backup.
 
-If you experience any issues after patching, you can restore the previous state by copying the appropriate backup file back into the `hs` directory and removing the modified file.
+## Restore System
+
+The tool includes a restore script.
+
+When executed:
+
+1. It scans the backup directory.
+2. Displays available backup folders sorted by date (newest first).
+3. Allows you to select a backup using an index number.
+4. Restores all files from the selected backup folder to the hs directory.
+
+Example selection screen:
+
+```
+Available backups:
+-------------------
+[0] 2026-03-02 11:45:33 (20260302114533)
+[1] 2026-03-01 10:10:10 (20260301101010)
+```
 
 ## Limitations
 
