@@ -38,5 +38,5 @@ jobs:
             "$ZIP_NAME" \
             "SHA256.txt" \
             --title "WS English Patcher v$VERSION" \
-            --notes "Release for WS English Patcher\n\nVersion: v$VERSION\n\nIncludes:\n- Latest patcher (ZIP archive)\n- SHA256 checksum file" \
+            --notes $'Release for WS English Patcher\n\nVersion: v'"$VERSION"$'\n\nIncludes:\n- Latest patcher (ZIP archive)\n- SHA256 checksum file' \
             --latest
