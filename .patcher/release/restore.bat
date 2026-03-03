@@ -1,0 +1,13 @@
+@echo off
+setlocal
+
+net session >nul 2>&1
+if %errorlevel% neq 0 (
+    echo Requesting administrator privileges...
+    powershell -Command "Start-Process -FilePath '%~f0' -Verb RunAs"
+    exit /b
+)
+
+powershell -ExecutionPolicy Bypass -NoProfile -File "%~dp0hs\hs-restore.ps1"
+
+pause
