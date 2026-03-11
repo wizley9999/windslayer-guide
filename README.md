@@ -25,7 +25,7 @@ We translate and summarize official announcements published by the WindSlayer te
 
 All translations are unofficial and provided for convenience only.
 
-Follow here: [News](https://github.com/wizley9999/windslayer.io/tree/main/news)
+Follow here: [News](https://github.com/wizley9999/windslayer-guide/tree/main/news)
 
 ### 2. Guides (Tips & Tricks)
 
@@ -38,7 +38,7 @@ This section provides gameplay-focused content such as:
 
 Content is written based on gameplay experience, community knowledge, and verified in-game testing when possible.
 
-Follow here: [Tips & Tricks](https://github.com/wizley9999/windslayer.io/tree/main/tips-and-tricks)
+Follow here: [Tips & Tricks](https://github.com/wizley9999/windslayer-guide/tree/main/tips-and-tricks)
 
 ### 3. Tools & Utilities
 
@@ -51,7 +51,7 @@ All tools are provided for convenience and educational purposes. Use at your own
 
 Release builds are distributed via GitHub Releases.
 
-Follow here: [Tools & Utilities](https://github.com/wizley9999/windslayer.io/tree/main/tools-and-utilities)
+Follow here: [Tools & Utilities](https://github.com/wizley9999/windslayer-guide/tree/main/tools-and-utilities)
 
 ## Disclaimer
 
