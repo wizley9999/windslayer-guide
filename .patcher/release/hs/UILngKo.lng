@@ -69,6 +69,11 @@
 71 World#Name(channel00)
 72 Skill#Info
 75 Skill#Name
+76 Q
+77 W
+78 E
+79 R
+80 T
 81 Skill
 87 Scroll#Back
 88 Scroll#Up
@@ -81,6 +86,12 @@
 95 slot05
 96 slot06
 97 Quest
+98 Y
+99 U
+100 I
+101 ½½·Ô¾ËÆÄºªQ
+102 ½½·Ô¾ËÆÄºªW
+103 ½½·Ô¾ËÆÄºªE
 104 Cancel
 105 Details
 106 QuestQuest
@@ -158,6 +169,11 @@
 195 Collected:
 196 000/000#(000%)
 197 Bag
+198 ½½·Ô¾ËÆÄºªR
+199 ½½·Ô¾ËÆÄºªT
+200 ½½·Ô¾ËÆÄºªY
+201 ½½·Ô¾ËÆÄºªU
+202 ½½·Ô¾ËÆÄºªI
 205 Usage
 206 ETC
 207 Store
@@ -3545,7 +3561,6 @@
 8418 Sender
 8419 Gold#to#Send
 8420 Event#Item#Reward
-8423 You#have#received#this#item#as#an#event#reward.
 8424 x#00000
 8425 Winies
 8426 Can#be#obtained#through#PvP.
